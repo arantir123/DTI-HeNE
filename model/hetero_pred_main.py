@@ -134,7 +134,6 @@ def D_part_calculation(row_label, col_label, drug, target, DS_D, D_T_, concat_ty
         # gpcr SP task: concat1
         # ic SP task: concat2/concat3
         # e SP task: concat2/concat3
-        # db SP task: concat1
         if (k != row_label):
             # mul=DS_D[row_label][k]*D_T_[k][col_label]
             if (concat_type == 1):
@@ -410,7 +409,7 @@ def main():
     parser.add_argument('--concat', default=1, type=int,
                         help='scheme of the drug-target embedding generation')
 
-    # mission: e/gpcr/ic/nr/db
+    # mission: e/gpcr/ic/nr
     mission = 'nr'
     base_root = '..\data\{}_file'.format(mission)
     args = parser.parse_args(['--train-data', os.path.join(base_root, '{}_bipartite_DTI.dat'.format(mission)),
