@@ -1,5 +1,5 @@
 # DTI-HeNE
-DTI-HeNE: a novel method for drug-target interaction prediction based on heterogeneous network embedding
+DTI-HeNE: A novel method for drug-target interaction prediction based on heterogeneous network embedding
 # Requirements
 Python >= 3.6
 # Quick start
